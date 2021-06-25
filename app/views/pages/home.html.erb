@@ -1,2 +1,55 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="d-flex align-items-end justify-content-between ">
+  <div class="mt-5">
+      <h1 class =" home-title ml-4">HARRY</h1>
+      <h1 class =" home-title mt-3 ml-4">POTTER</h1>
+      <h1 class =" home-title mt-3 ml-4">API .</h1>
+
+      <%= form_tag api_v1_characters_path, method: :get, class: 'd-flex mt-3 ml-4 ' do %>
+        <%= text_field_tag :query,
+          params[:query],
+          class: "form-control",
+          placeholder: "What wizard or creature are you looking for?"
+        %>
+        <%= submit_tag "Search", class: "btn btn-primary" %>
+      <% end %>
+  </div>
+
+  <div class=" mt-5 mr-4">
+    <%= image_tag "home.jpg", alt: "lunettes", width: 600 %>
+  </div>
+</div>
+
+<div class = "mr-4 mt-4">
+  <div class="mt-5 ml-4">
+    <h3 class="content-title-one pt-5">Get the <%= @characters.count %> </h3>
+    <h3 class="content-title-one">witches and wizards</h3>
+  </div>
+
+  <div class="d-flex  ">
+    <pre class="ml-4">
+      [
+        {
+        "id": 1,
+        "name": "Harry Potter",
+        "house": "Gryffindor",
+        "role": "Student",
+        "wand": "Holly Wood and Phoenix Feather",
+        "bloodstatus": "half-blood"
+        },
+        {
+        "id": 2,
+        "name": "Hermione Granger",
+        "house": "Griffyndor",
+        "role": "Student",
+        "wand": "Vine wood and Dragon Heartstring",
+        "bloodstatus": "Muggle-born"
+        },
+        ...
+      ]
+    </pre>
+
+    <code class="align-self-center">GET /api/v1/characters</code>
+  </div>
+
+</div>
+
