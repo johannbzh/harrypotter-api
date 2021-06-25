@@ -1,1 +1,31 @@
 // Specific CSS for your home-page
+.home-title {
+  font-size: 5.5rem;
+}
+.btn {
+  background-color: #122121;
+  border: none;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #122121;
+}
+
+.form-control {
+  width: 400px;
+}
+
+.content-title-one {
+  font-size: 3rem;
+}
+
+
+pre {
+  width: 600px;
+  background: rgba(18, 33, 33, 1);
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px 0px;
+  color: white;
+}
