@@ -1,4 +1,4 @@
-# :new_moon: HARRY POTTER API
+# ✨	 HARRY POTTER API
 ## :book: Usage
 Harry Potter API provides a list of all characters in anime Attack on Titan.
 
