@@ -8,7 +8,7 @@
         <%= text_field_tag :query,
           params[:query],
           class: "form-control",
-          placeholder: "What wizard or creature are you looking for?"
+          placeholder: "Which wizard or creature are you looking for?"
         %>
         <%= submit_tag "Search", class: "btn btn-primary" %>
       <% end %>
@@ -25,7 +25,7 @@
     <h3 class="content-title-one">witches and wizards</h3>
   </div>
 
-  <div class="d-flex  ">
+    <code class=" ml-4 mt-5">GET /api/v1/characters</code>
     <pre class="ml-4">
       [
         {
@@ -47,9 +47,5 @@
         ...
       ]
     </pre>
-
-    <code class="align-self-center">GET /api/v1/characters</code>
-  </div>
-
 </div>
 
