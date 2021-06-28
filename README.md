@@ -1,6 +1,6 @@
 # ✨	 HARRY POTTER API
 ## :book: Usage
-Harry Potter API provides a list of all characters in anime Attack on Titan.
+Harry Potter API provides a list of all witches, wizards and creatures of Harry Potter.
 
 Here are some examples:
 ### If you want to get all witches & wizards of Hoggwarts
